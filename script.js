@@ -18,6 +18,18 @@ const album = {
             texto: "Recuerda que el verte sonreír es una de las mejores cosas que nos puede pasar 😁"
         },
         {src: "IMG/fotos/foto6.jpeg", type: "img", texto: "Y verte tan feliz es de las cosas que mas deseamos!!❤️"},
+        {
+            src: "IMG/fotos/foto8.jpeg",
+            type: "img",
+            texto: "Cada uno de los que te conoce sabe lo grandiosa persona que eres, en este día tan especial queremos agradecer, no solo que tengas un año mas de vida ,si no, el que se nos permitió tenerte a ti una mujer tan increíble que vuelve especial cada día\n" +
+                "\n" +
+                "Queremos desearte lo mejor, que se cumplan todas tu metas restantes, que sigas siendo esa mujer tan alegre y especial que eres\n" +
+                "\n" +
+                "Que tu sonrisa nos siga alegrando dia a dia\n" +
+                "\n" +
+                "Te queremos con todo el kokoro!! \n" +
+                "\n"
+        },
         {src: "IMG/fotos/foto7.jpg", type: "img", texto: "Se me acabaron las fotos!, ve a ver los videos ;)"},
     ],
     videos: [
