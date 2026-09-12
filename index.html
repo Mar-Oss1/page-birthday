@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Feliz Cumpleaños Tía! 🎂</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="confetti-bg">
+    <!-- Confeti animado -->
+    <div class="confetti"></div><div class="confetti"></div><div class="confetti"></div>
+    <div class="confetti"></div><div class="confetti"></div><div class="confetti"></div>
+    <div class="confetti"></div><div class="confetti"></div><div class="confetti"></div>
+    <div class="confetti"></div><div class="confetti"></div><div class="confetti"></div>
+</div>
+
+<nav class="sidebar">
+    <div class="logo-area">🎂 Nuestra Familia</div>
+
+    <div class="categories-scroll" id="categoriesContainer">
+        <button class="cat-btn active" data-cat="fotos">✨ Fotos</button>
+        <button class="cat-btn" data-cat="videos">🎥 Videos</button>
+    </div>
+
+    <div class="special-btn-container">
+        <button class="magic-btn" id="surpriseBtn">🎁 Sorpresa</button>
+    </div>
+</nav>
+
+<main class="main-content">
+
+    <div class="header-pill" id="tituloCat">✨ Recuerdos en Familia</div>
+
+    <div class="carousel-container">
+
+        <div class="photo-frame">
+            <button class="nav-btn prev" id="prevBtn">&#10094;</button>
+
+            <img id="fotoActual" src="" alt="Foto" class="media-active">
+
+            <!-- CAMBIO 1: ahora con "controls" para pausar, rebobinar y subir volumen -->
+            <video id="videoActual" muted playsinline controls style="display: none; width: 100%; height: 100%; object-fit: contain; border-radius: 15px; background: #fff0f3;">
+                Tu navegador no soporta videos.
+            </video>
+
+            <!-- CAMBIO 2: botón visible para activar el sonido del video -->
+            <button class="sound-btn" id="soundBtn">🔇 Activar sonido</button>
+
+            <button class="nav-btn next" id="nextBtn">&#10095;</button>
+
+            <!-- Indicador de pausa automática -->
+            <div class="auto-indicator" id="autoIndicator">▶ Auto</div>
+        </div>
+
+        <div class="photo-caption">
+            <p id="textoFoto">Cargando recuerdos...</p>
+        </div>
+
+    </div>
+
+</main>
+
+
+<!-- NUEVO: Etiqueta señalando el botón -->
+<div class="music-label" id="musicLabel">
+    <span class="label-text">¡Poné música! 🎶</span>
+    <span class="label-arrow">▶</span>
+</div>
+<!-- Botón de música flotante -->
+<button class="music-btn" id="musicBtn" title="Reproducir/Pausar música">
+    <span class="music-icon">🎵</span>
+</button>
+
+
+<audio id="audioPlayer" src="audio/musica.mp3" loop></audio>
+
+<!-- Modal sorpresa -->
+<div id="modalSorpresa" class="modal">
+    <div class="modal-content">
+        <span class="close" id="closeModal">&times;</span>
+        <h2>🎉 ¡Feliz Cumpleaños Tía! 🎂</h2>
+        <p>Gracias por todos estos momentos tan hermosos que hemos vivido en familia. Eres una persona muy especial para nosotros y te deseamos lo mejor en este día tan importante. ¡Que vengan muchos años más llenos de alegría!</p>
+        <div class="big-heart">🎁</div>
+        <img src="IMG/fotos/fotoboton.jpg" alt="" style="width: 60%; height: 60%;">
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
